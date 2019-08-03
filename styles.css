@@ -1,0 +1,238 @@
+.bed {
+  background: green;
+  border-radius: 2px;
+}
+
+.notBed {
+  background: #4dd2ff;
+  border-radius: 2px;
+}
+
+.normal {
+  background: #e6e600;
+  border-radius: 2px;
+}
+
+.good {
+  background: #ff8533;
+  border-radius: 2px;
+}
+
+.strong {
+  background: red;
+  border-radius: 2px;
+}
+
+body {
+  background: black;
+}
+
+#mainHeader {
+  color: #1affff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.game h3, .game h4 {
+  color: #ff1aff;
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.game > div {
+  text-align: center;
+}
+
+.game i:not(.ruler) {
+  color: #4dff4d;
+  font-size: 11rem;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.game .indicator {
+  width: 30vw;
+  height: 20px;
+  margin-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  text-align: left;
+  border-radius: 5px;
+}
+
+.game #bump {
+  background: #ff4d4d;
+  color: white;
+  width: 35%;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.ruler {
+  font-size: 20px !important;
+  color: white !important;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#jumper_bot {
+  -webkit-animation-name: jump;
+          animation-name: jump;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: relative;
+  width: 20px;
+  display: none;
+}
+
+#jumper_player {
+  -webkit-animation-name: jump;
+          animation-name: jump;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: relative;
+  width: 20px;
+  display: block;
+}
+
+h4 {
+  margin: 0px !important;
+  font-size: 1em !important;
+}
+
+#round {
+  color: #1affff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 4 !important;
+}
+
+.modal {
+  display: none;
+  z-index: 5;
+  width: 30vw;
+  background: white;
+  padding: 10px;
+  margin: 0px 35vw 0px 35vw;
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  top: 100px;
+}
+
+.modal .buttons {
+  text-align: center;
+}
+
+.modal .buttons button {
+  background: #ff4d4d;
+  color: white;
+  width: 35%;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal i {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.modal p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 28.5vw;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 28.5vw;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@media (max-width: 374px) {
+  .game i:not(.ruler) {
+    color: #4dff4d;
+    font-size: 5rem;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .game .indicator {
+    width: 35vw;
+    height: 20px;
+    margin-bottom: 40px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    text-align: left;
+    border-radius: 5px;
+  }
+  .game #bump {
+    background: #ff4d4d;
+    color: white;
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .modal {
+    width: 70vw;
+    margin: 0px 15vw 0px 13vw;
+  }
+  .modal .buttons button {
+    width: 55%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

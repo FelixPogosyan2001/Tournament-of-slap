@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = 'styles.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class = 'shadow'></div>
+    <div class = 'modal'>
+        <div class = 'buttons'>
+            <button id = 'continue'>Continue game</button>
+        </div>
+    </div>
+    <h1 id = 'mainHeader'>Tournament of slap</h1>
+    <div class = 'game'>
+        <div class = 'user'>
+            <h3>Player : 0</h3>
+            <h4 id = 'client'></h4>
+            <i class="player fas fa-grin"></i>
+            <div class = 'indicator'>
+                <div class = 'bed'>
+                    <div id = 'jumper_player'><i class="ruler fas fa-arrows-alt-h"></i></div>
+                </div>
+                <div class = 'notBed'></div>
+                <div class = 'normal'></div>
+                <div class = 'good'></div>
+                <div class = 'strong'></div>
+            </div>
+            <button id = 'bump'>Bump</button>
+        </div>
+        <h3 id = 'round'>Round 1</h3>
+        <div class = 'computer'>
+            <h3>Computer : 0</h3>
+            <h4 id = 'comp'></h4>
+            <i class="bot fas fa-grin"></i>
+            <div class = 'indicator'>
+                <div class = 'bed'>
+                    <div id = 'jumper_bot'><i class="ruler fas fa-arrows-alt-h"></i></div>
+                </div>
+                <div class = 'notBed'></div>
+                <div class = 'normal'></div>
+                <div class = 'good'></div>
+                <div class = 'strong'></div>
+            </div>
+        </div>
+    </div>
+    <script src = 'logic.js'></script>
+</body>
+</html>
